@@ -145,6 +145,7 @@ Helper pour récupérer le paramètre de l'url:
 	  }
 	}
 
+
 ### Etape 16: Page form dynamique
 
 - Ajouter un bind sur l'évènement "pagebeforeshow" de la page form
