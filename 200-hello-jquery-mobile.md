@@ -159,9 +159,6 @@ Helper pour récupérer le paramètre de l'url:
 
 ### Etape 17 : Le stocackage
 
-- Ajouter un bind sur l'évènement pageinit
-- Remplir l'object checklists avec les données du localstorage avec la clé "checklists"
-- Lors de chaque action sur l'object checklists, sauvegarder les changement dans le localstorage avec la clé checklist
 
 Ressources
 ----------
