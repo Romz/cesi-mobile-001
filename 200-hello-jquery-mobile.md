@@ -157,6 +157,7 @@ Helper pour récupérer le paramètre de l'url:
 - Ajouter un bind sur l'évènement "click" du bouton d'ajout de tâche qui ajoutera un input de tâche
 - Ajouter un bind sur l'évènement "click du bouton de sauvegarde qui ajoutera une entré dans l'objet checklist en cas d'ajout et qui modifira la checklist en cas d'édition
 
+### Etape 17 : Le stockage
 
 - Ajouter un bind sur l'évènement pageinit
 - Remplir l'object checklists avec les données du localstorage avec la clé "checklists"
