@@ -58,6 +58,28 @@ Ajouter à cette liste un filtre de recherche.
 
 ### Exercice 9 : 
 
+Dans la page view, Ajouter une liste de checkboxes, avec des label.
+Par exemple:
+
+- Tâche 1
+- Tâche 2
+- Tâche 3
+
+### Exercice 10 : Le formulaire d'édition
+
+- Créer un nouveau fichier form.html.
+- Ajouter un premier champs text en mettant en placeholder "Nom de la checklist".
+- Ajouter ensuite un control group avec plusieurs champs textes (qui vont correspondre au différentes tâches de la checklist).
+- Ajouter un bouton "Ajouter une tâche" en dessous de la liste d'input
+- Ajouter un title dans le header: "Edit Checklist 1"
+- Ajouter un bouton "Sauvegarder" dans le footer avec comme icone un "check"
+
+### Exercice 11 : Lien vers le formulaire
+
+- Dans la page list, ajouter en footer un bouton "Ajouter une checklist" pointant vers la page form
+- Dans la listview, ajouter pour chaque ligne des Split button avec comme icone un "gear" pointant vers la page form
+(Cela va permettre de respectivement ajouter et éditer une checklist)
+
 Ressources
 ----------
 [Structure d'une page jquery](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-anatomy.html)
@@ -66,5 +88,6 @@ Ressources
 [Les transitions](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-transitions.html)
 [Les listes](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/index.html)
 [Les checkboxes](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/checkboxes/)
-
-
+[Text input](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/textinputs/)
+[Forms](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/docs-forms.html)
+[Split button](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/lists-split.html)
