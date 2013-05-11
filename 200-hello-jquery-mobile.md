@@ -58,7 +58,8 @@ Ajouter à cette liste un filtre de recherche.
 
 ### Exercice 9 : 
 
-Ressources:
+Ressources
+----------
 [Structure d'une page jquery](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-anatomy.html)
 [Les liens](http://view.jquerymobile.com/1.3.1/dist/demos/widgets/links/)
 [les headers](http://view.jquerymobile.com/1.3.1/dist/demos/widgets/headers/)
