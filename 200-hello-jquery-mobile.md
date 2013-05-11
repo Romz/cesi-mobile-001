@@ -158,10 +158,9 @@ Helper pour récupérer le paramètre de l'url:
 - Ajouter un bind sur l'évènement "click du bouton de sauvegarde qui ajoutera une entré dans l'objet checklist en cas d'ajout et qui modifira la checklist en cas d'édition
 
 
-### Etape 17 : Le stocackage
-
-test
-
+- Ajouter un bind sur l'évènement pageinit
+- Remplir l'object checklists avec les données du localstorage avec la clé "checklists"
+- Lors de chaque action sur l'object checklists, sauvegarder les changement dans le localstorage avec la clé checklist
 
 Ressources
 ----------
