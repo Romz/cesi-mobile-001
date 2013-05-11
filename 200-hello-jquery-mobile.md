@@ -13,38 +13,38 @@ Requirements
 - Un navigateur assez récent pour bien gérer l'html5 (chrome, safari, firefox)
 - Un éditeur de texte
 
-Exercices
+Etapes
 ---------
 
-### Exercice 1 : Installation
+### Etape 1 : Installation
 
 Créer une page index.html et inclure jquery et jquery mobile.
 
-### Exercice 2 : Première page
+### Etape 2 : Première page
 
 Créer une première page avec en header le title "Checklist" et en content "Hello world".
 Cette page aura comme id "list"
 
-### Exercice 3 : Deuxième page et lien
+### Etape 3 : Deuxième page et lien
 
 Dans le même fichier html, ajouter une deuxième page avec en header "Checklist 1" et en content "todo".
 Cette page aura l'id "view"
 Ajouter dans la première page un liens vers la nouvel page, en utilisant l'id. (Template multi page)
 
-### Exercice 4 : Séparation des fichiers
+### Etape 4 : Séparation des fichiers
 
 Créer un nouveau fichier view.html et copier coller le code de la nouvelle page dedans.
 Changer le lien de la page 1 pour pointer vers le nouveau fichier. (Template single page)
 
-### Exercice 5 : Bouton back
+### Etape 5 : Bouton back
 
 Dans la deuxième page, ajouter un bouton back pour revenir sur la page précédante dans le header (cf section header des ressources)
 
-### Exercice 6 : Transition
+### Etape 6 : Transition
 
 Ajouter une transition de type "slide" lors de la naviagation entre la page list et la page view
 
-### Exercice 7 : List
+### Etape 7 : List
 
 Dans la première page, supprimer le content et ajouté y une liste de liens en dure vers la page view.
 Exemple:
@@ -52,11 +52,11 @@ Exemple:
 - Checklist 2
 - Checklist 3
 
-### Exercice 8 : Filtre de recherce
+### Etape 8 : Filtre de recherce
 
 Ajouter à cette liste un filtre de recherche.
 
-### Exercice 9 : 
+### Etape 9 : 
 
 Dans la page view, Ajouter une liste de checkboxes, avec des label.
 Par exemple:
@@ -65,7 +65,7 @@ Par exemple:
 - Tâche 2
 - Tâche 3
 
-### Exercice 10 : Le formulaire d'édition
+### Etape 10 : Le formulaire d'édition
 
 - Créer un nouveau fichier form.html.
 - Ajouter un premier champs text en mettant en placeholder "Nom de la checklist".
@@ -74,11 +74,43 @@ Par exemple:
 - Ajouter un title dans le header: "Edit Checklist 1"
 - Ajouter un bouton "Sauvegarder" dans le footer avec comme icone un "check"
 
-### Exercice 11 : Lien vers le formulaire
+### Etape 11 : Lien vers le formulaire
 
 - Dans la page list, ajouter en footer un bouton "Ajouter une checklist" pointant vers la page form
 - Dans la listview, ajouter pour chaque ligne des Split button avec comme icone un "gear" pointant vers la page form
 (Cela va permettre de respectivement ajouter et éditer une checklist)
+
+### Etape 12 : Script
+
+- Ajouter un fichier script.js dans la page list entre l'inclusion de jquery et de jquery mobile.
+- Ajouter le code d'initialisation permettant de se bind sur l'évènement "mobileinit".
+
+### Etape 13 : Objet de test
+
+Créer un objet avec des données de tests pour définir la structure.
+Par exemple:
+
+    var checklists = {
+	  1: { //id of checklist
+	    name: 'checklist1',
+		tasks : [
+		  {name: 'Task1', done: true},
+		  {name: 'Task2', done: false},
+		  {name: 'Task3', done: false},
+		]
+	  },
+	  2: {
+	    name:'checklist2',
+		tasks : [
+		  {name: 'Task1', done: true},
+		  {name: 'Task2', done: false},
+		  {name: 'Task3', done: true},
+		]
+      }
+	]
+
+### Etape 14 : Page de list dynamique
+
 
 Ressources
 ----------
@@ -91,3 +123,4 @@ Ressources
 [Text input](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/textinputs/)
 [Forms](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/docs-forms.html)
 [Split button](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/lists-split.html)
+[Base script](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/globalconfig.html)
