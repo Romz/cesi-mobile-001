@@ -9,10 +9,10 @@ Expliquer ici la finalité du tp
 Requirements
 ------------
 
-- Un serveur web d'installé (apache par exemple)
-- Un navigateur assez récent pour bien gérer l'html5 (chrome, safari, firefox)
-- Un éditeur de texte
-- Des base en javascript et jquery
+- Un serveur web installé (apache par exemple)
+- Un navigateur assez récent pour gérer l'html5 (chrome, safari, firefox)
+- Un éditeur de texte / IDE
+- Des bases en javascript et jQuery
 
 Etapes
 ---------
@@ -49,6 +49,7 @@ Ajouter une transition de type "slide" lors de la naviagation entre la page list
 
 Dans la première page, supprimer le content et ajouté y une liste de liens en dure vers la page view.
 Exemple:
+
 - Checklist 1
 - Checklist 2
 - Checklist 3
