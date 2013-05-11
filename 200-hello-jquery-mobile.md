@@ -1,6 +1,8 @@
 Hello World jQuery mobile
 =========================
 
+*****
+
 Intro
 -----
 
@@ -19,7 +21,7 @@ Etapes
 
 ### Etape 1 : Installation
 
-Créer une page index.html et inclure jquery et jquery mobile.
+Créer une page index.html et inclure jQuery et jQuery mobile.
 
 ### Etape 2 : Première page
 
@@ -84,7 +86,7 @@ Par exemple:
 
 ### Etape 12 : Script
 
-- Ajouter un fichier script.js dans la page list entre l'inclusion de jquery et de jquery mobile.
+- Ajouter un fichier script.js dans la page list entre l'inclusion de jQuery et de jQuery mobile.
 - Ajouter le code d'initialisation permettant de se bind sur l'évènement "mobileinit".
 
 ### Etape 13 : Objet de test
@@ -119,8 +121,8 @@ Par exemple:
 - Ajouter cette id également pour les liens vers la page de formulaire
 
 Tips:
-- Utiliser la méthode jquery "html()" pour vider la liste
-- Utiliser la méthode jquery "append()" pour ajouter des éléments à la listview
+- Utiliser la méthode jQuery "html()" pour vider la liste
+- Utiliser la méthode jQuery "append()" pour ajouter des éléments à la listview
 - Ne pas oublier de rafraichir de listview une fois que les éléments sont dynamiquement créé(.listview("refresh"))
 
 ### Etape 15: Page view dynamique
@@ -164,9 +166,11 @@ Helper pour récupérer le paramètre de l'url:
 - Remplir l'object checklists avec les données du localstorage avec la clé "checklists"
 - Lors de chaque action sur l'object checklists, sauvegarder les changement dans le localstorage avec la clé checklist
 
+*****
+
 Ressources
 ----------
-[Structure d'une page jquery](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-anatomy.html)
+[Structure d'une page jQuery](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-anatomy.html)
 [Les liens](http://view.jquerymobile.com/1.3.1/dist/demos/widgets/links/)
 [les headers](http://view.jquerymobile.com/1.3.1/dist/demos/widgets/headers/)
 [Les transitions](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-transitions.html)
