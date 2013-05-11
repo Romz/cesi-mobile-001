@@ -159,6 +159,7 @@ Helper pour récupérer le paramètre de l'url:
 
 ### Etape 17 : Le stocackage
 
+test
 
 Ressources
 ----------
