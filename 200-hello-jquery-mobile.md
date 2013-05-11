@@ -111,7 +111,36 @@ Par exemple:
 
 ### Etape 14 : Page de list dynamique
 
-Ajouter un bind sur l'évènement "pagebeforeshow"
+- Ajouter un bind sur l'évènement "pagebeforeshow" de la page list
+- Parcourir l'objet checklist et créer dynamiquement la listview
+- Ajouter l'id de la checklist en paramètre de l'url du lien vers la page view (ex: view.html?id=5)
+- Ajouter cette id également pour les liens vers la page de formulaire
+
+Tips:
+- Utiliser la méthode jquery "html()" pour vider la liste
+- Utiliser la méthode jquery "append()" pour ajouter des éléments à la listview
+- Ne pas oublier de rafraichir de listview une fois que les éléments sont dynamiquement créé(.listview("refresh"))
+
+### Etape 15: Page view dynamique
+
+- Ajouter un bind sur l'évènement pagebeforeshow de la page view
+- Récupérer le paramètre de l'url pour récupérer la bonne checklist
+- Parcourir la liste de tâches de la checklist et créer dynamiquement les checkboxes.
+
+Helper pour récupérer le paramètre de l'url:
+
+    var getUrlParameter = function(paramName) {
+	  var urlParams = window.location.href.split('?')[1];
+	  if (urlParams) {
+	    var params = urlParams.split('&');
+
+        for (var i = 0; i <  params.length; i++) {
+	      var param = params[i].split('=');
+		  if (param[0] == paramName)
+	        return param[1];
+		}
+	  }
+	}
 
 Ressources
 ----------
