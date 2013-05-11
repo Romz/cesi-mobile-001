@@ -146,7 +146,7 @@ Helper pour récupérer le paramètre de l'url:
 	}
 
 
-### Etape 16: Page form dynamique
+### Etape 16 : Page form dynamique
 
 - Ajouter un bind sur l'évènement "pagebeforeshow" de la page form
 - Récupérer l'id dans l'url
@@ -156,6 +156,12 @@ Helper pour récupérer le paramètre de l'url:
   - Parcourir la liste des tâches et ajouter des input text pour chaque tâches avec le nom de la tâche déjà renseigné
 - Ajouter un bind sur l'évènement "click" du bouton d'ajout de tâche qui ajoutera un input de tâche
 - Ajouter un bind sur l'évènement "click du bouton de sauvegarde qui ajoutera une entré dans l'objet checklist en cas d'ajout et qui modifira la checklist en cas d'édition
+
+### Etape 17 : Le stocackage
+
+- Ajouter un bind sur l'évènement pageinit
+- Remplir l'object checklists avec les données du localstorage avec la clé "checklists"
+- Lors de chaque action sur l'object checklists, sauvegarder les changement dans le localstorage avec la clé checklist
 
 Ressources
 ----------
@@ -170,3 +176,4 @@ Ressources
 [Split button](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/lists-split.html)
 [Base script](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/globalconfig.html)
 [Events](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/events.html)
+[Localstorage](http://www.lafermeduweb.net/billet/le-stockage-local-en-html5-localstorage-942.html)
