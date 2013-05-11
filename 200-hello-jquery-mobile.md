@@ -111,6 +111,7 @@ Par exemple:
 
 ### Etape 14 : Page de list dynamique
 
+Ajouter un bind sur l'évènement "pagebeforeshow"
 
 Ressources
 ----------
@@ -124,3 +125,4 @@ Ressources
 [Forms](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/docs-forms.html)
 [Split button](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/lists-split.html)
 [Base script](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/globalconfig.html)
+[Events](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/events.html)
