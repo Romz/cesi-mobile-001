@@ -4,7 +4,7 @@ Hello World jQuery mobile
 Intro
 -----
 
-Expliquer ici la finalité du tp
+Le but de ce TP est de créer une application checklist avec jquery mobile
 
 Requirements
 ------------
@@ -165,15 +165,15 @@ Helper pour récupérer le paramètre de l'url:
 
 Ressources
 ----------
-[Structure d'une page jquery](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-anatomy.html)
-[Les liens](http://view.jquerymobile.com/1.3.1/dist/demos/widgets/links/)
-[les headers](http://view.jquerymobile.com/1.3.1/dist/demos/widgets/headers/)
-[Les transitions](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-transitions.html)
-[Les listes](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/index.html)
-[Les checkboxes](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/checkboxes/)
-[Text input](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/textinputs/)
-[Forms](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/docs-forms.html)
-[Split button](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/lists-split.html)
-[Base script](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/globalconfig.html)
-[Events](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/events.html)
-[Localstorage](http://www.lafermeduweb.net/billet/le-stockage-local-en-html5-localstorage-942.html)
+- [Structure d'une page jquery](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-anatomy.html)
+- [Les liens](http://view.jquerymobile.com/1.3.1/dist/demos/widgets/links/)
+- [les headers](http://view.jquerymobile.com/1.3.1/dist/demos/widgets/headers/)
+- [Les transitions](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-transitions.html)
+- [Les listes](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/index.html)
+- [Les checkboxes](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/checkboxes/)
+- [Text input](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/textinputs/)
+- [Forms](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/docs-forms.html)
+- [Split button](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/lists-split.html)
+- [Base script](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/globalconfig.html)
+- [Events](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/events.html)
+- [Localstorage](http://www.lafermeduweb.net/billet/le-stockage-local-en-html5-localstorage-942.html)
