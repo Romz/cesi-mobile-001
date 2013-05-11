@@ -12,6 +12,7 @@ Requirements
 - Un serveur web d'installé (apache par exemple)
 - Un navigateur assez récent pour bien gérer l'html5 (chrome, safari, firefox)
 - Un éditeur de texte
+- Des base en javascript et jquery
 
 Etapes
 ---------
@@ -123,9 +124,11 @@ Tips:
 
 ### Etape 15: Page view dynamique
 
-- Ajouter un bind sur l'évènement pagebeforeshow de la page view
+- Ajouter un bind sur l'évènement "pagebeforeshow" de la page view
 - Récupérer le paramètre de l'url pour récupérer la bonne checklist
 - Parcourir la liste de tâches de la checklist et créer dynamiquement les checkboxes.
+- Pour chaque checkbox, ajouter un bind sur l'évènement "change" et changer la valeur du "done" dans l'objet checklist
+  
 
 Helper pour récupérer le paramètre de l'url:
 
@@ -141,6 +144,17 @@ Helper pour récupérer le paramètre de l'url:
 		}
 	  }
 	}
+
+### Etape 16: Page form dynamique
+
+- Ajouter un bind sur l'évènement "pagebeforeshow" de la page form
+- Récupérer l'id dans l'url
+- Tester si l'id est présent pour savoir si c'est un ajout ou une édition
+- Si c'est une édition
+  - Remplir le champs name avec le nom de la checklist
+  - Parcourir la liste des tâches et ajouter des input text pour chaque tâches avec le nom de la tâche déjà renseigné
+- Ajouter un bind sur l'évènement "click" du bouton d'ajout de tâche qui ajoutera un input de tâche
+- Ajouter un bind sur l'évènement "click du bouton de sauvegarde qui ajoutera une entré dans l'objet checklist en cas d'ajout et qui modifira la checklist en cas d'édition
 
 Ressources
 ----------
