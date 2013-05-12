@@ -4,7 +4,7 @@ Hello World jQuery mobile
 Intro
 -----
 
-Le but de ce TP est de créer une application checklist avec jquery mobile
+Le but de ce TP est de créer une application checklist avec jquery mobile.
 
 Requirements
 ------------
