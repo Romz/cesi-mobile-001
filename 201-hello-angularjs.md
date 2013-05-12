@@ -4,7 +4,7 @@ Hello world angularjs
 Intro
 -----
 
-TODO: intro
+Le but de ce TP est de créer une application checklist avec angularjs et bootstrap
 
 Requirements
 ------------
