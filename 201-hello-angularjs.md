@@ -64,9 +64,9 @@ Etapes
 
 ### Etape 7 : Page Formulaire
 
-- Créer un page pour le formulaire avec 2 chemins et 2 controllers différent
-  - Pour l'ajout un controller AddChecklist et un path checklists/add
-  - Pour l'édition un controller EditChecklist et un path checklists/edit/:checkListsId
+- Créer un page pour le formulaire avec 2 chemins mais un seul controller
+  - Pour l'ajout le chemin est checklists/add
+  - Pour l'édition le chemin est  checklists/edit/:checkListsId
 - Ajouter un header avec un title
 - Créer le formulaire avec
   - Un input text pour le nom de la checklist
@@ -130,10 +130,26 @@ Exemple de structure de l'objet checklists:
 - Dans le lien de la tâche, ajouter la directive "ng-click" avec en paramètre une fonction pour mettre à jour la tâche (updateTask par exemple), en lui passant en paramètre l'index de la tâche
 - Dans le controller ViewController, ajouter dans le scope la méthode updateTask qui changera l'état de l'attribut done de la tâche référencé par l'index passé en paramètre
 
-### Etape 11 : Page form dynamique
+### Etape 11 : Page form
 
 - Récupérer l'id de la checklist à l'aide du paramètre $routeParams, et ajouté la checklist dans le scope
-- Remplac
+- Si il n'y a pas d'id
+  - Créer un nouvel objet checklist
+  - Ajouter le nouvel objet aux autres checklists
+  - Récupérer l'id du nouvel objet
+- Stocker l'id dans le scope
+- Changer le title par "Edit <Nom de la checklist>"
+- Ajouter un bouton back pointant vers la page view avec l'id
+- Dans le input text du nom, ajouter le ng-model pour qu'il pointe sur le nom de la checklist
+- Ajouter un ng-repeat et ajouter un input pour chaque tâche avec comme ng-model la tâche courante
+- Dans le bouton, ajouter une directive ng-click avec en paramètre une méthode pour ajouter une tâche
+- Dans le controller, ajouter la méthode d'ajout de tâche au scope
+
+### Etape 12 : Le stockage
+
+- Dans le controller AppController, remplir l'object checklists avec les données du localstorage avec la clé "checklists"
+- Lors de chaque action sur l'object checklists, sauvegarder les changement dans le localstorage avec la clé checklist
+
 
 Ressources
 ----------
@@ -145,6 +161,7 @@ Ressources
 - [Routes](http://docs.angularjs.org/tutorial/step_07)
 - [Model & Scope](http://docs.angularjs.org/tutorial/step_02)
 - [Filtres](http://docs.angularjs.org/tutorial/step_03)
+
 ### Bootstrap
 
 - [Navbars](http://twitter.github.io/bootstrap/components.html#navbar)
@@ -153,3 +170,7 @@ Ressources
 - [Navs](http://twitter.github.io/bootstrap/components.html#navs)
 - [Grid system](http://twitter.github.io/bootstrap/scaffolding.html#gridSystem)
 - [Forms](http://twitter.github.io/bootstrap/base-css.html#forms)
+
+### Autre
+
+- [Localstorage](http://www.lafermeduweb.net/billet/le-stockage-local-en-html5-localstorage-942.html)
