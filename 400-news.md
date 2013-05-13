@@ -26,4 +26,4 @@ Bonus
   - Nombre de commentaire dans la page de listing
   - Feed de commentaire en dessous de l'affichage de la new
 - Ajouter un système de bookmark
-- Ajouter des catégories
+- Ajouter un système de catégories
