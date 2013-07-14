@@ -4,7 +4,6 @@ Hello phonegap
 Installation pour android
 -------------------------
 
-
 Dans un premier temps, il faut installer l'utilitaire en ligne de commande cordova. Vous pouvez trouver le guide d'installation ici: [http://docs.phonegap.com/en/2.9.0/guide_cli_index.md.html#The Cordova Command-line Interface](http://docs.phonegap.com/en/2.9.0/guide_cli_index.md.html#The%20Cordova%20Command-line%20Interface)
 
 Il faut ensuite installer le sdk android. Vous pouvez trouver le guide d'installation ici: [http://docs.phonegap.com/en/2.9.0/guide_getting-started_android_index.md.html#Getting Started with Android](http://docs.phonegap.com/en/2.9.0/guide_getting-started_android_index.md.html#Getting Started with Android)
@@ -12,7 +11,7 @@ Il faut ensuite installer le sdk android. Vous pouvez trouver le guide d'install
 Creation d'un projet
 --------------------
 
-Pour créer un projet, il faut utiliser la commande cordova create <directory> <namespace> <message>. Les 2 derniers paramètres sont optionnel:
+Pour créer un projet, il faut utiliser la commande cordova create <directory> <namespace> <message>. Les 2 derniers paramètres sont optionnels:
 
     cordova create HelloWorld com.example.helloworld "Hello Word"
 	
