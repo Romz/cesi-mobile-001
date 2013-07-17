@@ -98,7 +98,7 @@ Fichier sms.js
 
 On va dans un premier temps récupérer l'objet qui va permettre d'exécuter les fonction JAVA depuis le js
 
-    var exec = require('cordova/exec')
+    var exec = require('cordova/exec');
 
 On va ensuite créer un objet SMS avec la méthode send
 
@@ -124,7 +124,7 @@ Fichier SMSPlugin.java
 
 La première chose à faire est de mettre le package:
 
-    package com.phonegap.plugins.sms
+    package com.phonegap.plugins.sms;
 
 Il faut ensuite ajouter les différents imports:
 
