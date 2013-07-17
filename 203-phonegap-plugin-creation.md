@@ -182,7 +182,7 @@ On ferme les accolades pour fermer la fonction.
 Nous avons donc maintenant un plugin permettant d'envoyer des sms.
 Pour utiliser le plugin en javascript, il ne reste plus qu'à appeler l'objet sms (qu'on a défini dans la balise clobbers):
 
-    widonw.sms.send("+3314567899", "Hello", function(success) {
+    widonw.sms.send("+33123456789", "Hello", function(success) {
         alert(success);
     }, function(error) {
         alert(error);
