@@ -18,9 +18,9 @@ On va donc créer ces fichiers avec la hiérarchie suivante:
 - SMSPlugin
   - plugin.xml
   - www
-    - sms.js
+      - sms.js
   - scr
-    - android
+      - android
 	  - SMSPlugin.java
 
 Le fichier plugin.xml
