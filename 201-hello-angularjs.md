@@ -12,7 +12,7 @@ Requirements
 - Un serveur web d'installé (apache par exemple)
 - Un navigateur assez récent pour bien gérer l'html5 (chrome, safari, firefox)
 - Un éditeur de texte
-- Des base en javascript
+- Des bases en javascript
 
 Etapes
 ------
@@ -21,8 +21,8 @@ Etapes
 
 - Cloner le projet github [angular-seed](https://github.com/angular/angular-seed)
 - Copier le répertoire app dans votre serveur web (Vous pouvez aussi utiliser le serveur nodejs fourni)
-- Supprimer les balises autres que script dans le body du index.html
-- Supprimer tout les fichiers du dossier partials
+- Supprimer les balises autres que script dans le body du fichier index.html
+- Supprimer tous les fichiers du dossier **partials**
 - Supprimer les 3 lignes du callback de la fonction config dans app.js
 - Supprimer les 2 controllers dans js/controllers.js
 - Télécharger une version de [twitter bootstrap](http://twitter.github.io/bootstrap/) 
@@ -30,7 +30,7 @@ Etapes
 
 ### Etape 2 : Création de la première page
 
-- Dans le fichier index.html, ajouter dans le body la directive ng-view
+- Dans le fichier index.html, ajouter dans le body la directive **ng-view**
 - Créer un nouveau fichier list.html dans le répertoire partials et y ajouter le texte suivant :  "page liste"
 - Ajouter le controller ListController dans le fichier controllers.js (ne pas oublier de passer $scope dans le constructeur)
 - Dans app.js, configurer la route vers "checklists" avec en template list.html et en controller ListController
@@ -64,11 +64,11 @@ Etapes
 
 ### Etape 7 : Page Formulaire
 
-- Créer un page pour le formulaire avec 2 chemins mais un seul controller
+- Créer une page pour le formulaire avec 2 chemins mais un seul controller
   - Pour l'ajout le chemin est checklists/add
-  - Pour l'édition le chemin est  checklists/edit/:checkListsId
-- Ajouter un header avec un title
-- Créer le formulaire avec
+  - Pour l'édition le chemin est checklists/edit/:checkListsId
+- Ajouter un header avec un titre
+- Créer le formulaire avec :  
   - Un input text pour le nom de la checklist
   - Une liste d'input text pour les tâches
   - Un bouton pour ajouter des input de tâche
