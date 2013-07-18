@@ -31,7 +31,7 @@ Etapes
 ### Etape 2 : Création de la première page
 
 - Dans le fichier index.html, ajouter dans le body la directive ng-view
-- Créer un nouveau fichier list.html dans le répertoire partials en ajouter dedans "page liste"
+- Créer un nouveau fichier list.html dans le répertoire partials et y ajouter le texte suivant :  "page liste"
 - Ajouter le controller ListController dans le fichier controllers.js (ne pas oublier de passer $scope dans le constructeur)
 - Dans app.js, configurer la route vers "checklists" avec en template list.html et en controller ListController
 - Ajouter la page checklists en chemin par défault
