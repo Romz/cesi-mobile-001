@@ -55,7 +55,7 @@ Etapes
 - Dans le fichier list.html, ajouter une list en nav tabs stacked (pour donner un effet list mobile)
 - Les liens de la liste doivent pointer vers la page view
 - Dans les liens de la liste, ajouter une icon-chevron-right avec la class pull-right(pour la mettre a droite)
-- Dans le header de la page view.html, ajouter à droite une bouton pour éditer la checklist avec un icon-pencil (Pour un affichage plus propre, utiliser le fluid grid system de bootstrap)
+- Dans le header de la liste, ajouter à droite une bouton pour éditer la checklist avec un icon-pencil (Pour un affichage plus propre, utiliser le fluid grid system de bootstrap)
 
 ### Etape 6 : Page View
 
