@@ -4,9 +4,18 @@ Hello phonegap
 Installation pour android
 -------------------------
 
-Dans un premier temps, il faut installer l'utilitaire en ligne de commande cordova. Vous pouvez trouver le guide d'installation ici: [http://docs.phonegap.com/en/2.9.0/guide_cli_index.md.html#The Cordova Command-line Interface](http://docs.phonegap.com/en/2.9.0/guide_cli_index.md.html#The%20Cordova%20Command-line%20Interface)
+Dans un premier temps, il faut installer l'utilitaire en ligne de commande cordova. Vous pouvez trouver le guide d'installation ici: [http://docs.phonegap.com/en/3.4.0/guide_cli_index.md.html#The%20Command-Line%20Interface](http://docs.phonegap.com/en/3.4.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
-Il faut ensuite installer le sdk android. Vous pouvez trouver le guide d'installation ici: [http://docs.phonegap.com/en/2.9.0/guide_getting-started_android_index.md.html#Getting Started with Android](http://docs.phonegap.com/en/2.9.0/guide_getting-started_android_index.md.html#Getting Started with Android)
+Il faut ensuite installer le sdk android. Vous pouvez trouver le guide d'installation ici: [http://docs.phonegap.com/en/3.4.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide](http://docs.phonegap.com/en/3.4.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+
+Cordova utilise ant pour créer les projets android. Vous pouvez télécharger ant ici: [http://ant.apache.org/bindownload.cgi](http://ant.apache.org/bindownload.cgi).
+Une fois téléchargé, il faut créer une variable d'environnement ANT_HOME pointant vers le répertoire ant. Il faut ensuite rajouter à la variable d'environnement PATH: %ANT_HOME%\bin sur winodws ou $ANT_HOME/bin sur linux / OSX.
+
+Pour pouvoir développer une application avec cordova, nous allons avoir besoin de l'outil ripple. ripple est un émulateur mobile pour navigateur qui permet de tester les applications sur les différentes résolutions mobiles et aussi de tester les fonctionnalité natvie comme le gps, l'accéléromètre sans avoir à build l'application à chaque fois.
+Comme cordova, ripple fonctionne dans un environnement node.
+On peut l'installer via la ligne de commande:
+
+    npm install -g ripple-emulator
 
 Creation d'un projet
 --------------------
@@ -39,16 +48,40 @@ Pour lancer l'application sur un device connecté en usb, utiliser la comande:
 
     cordova run android
 
-Cordova intègre un environnement web avec un simulateur intégré appelé ripple. Vous pouvez l'utilisé en utilisant la commande:
+Pour pouvoir tester l'application sans la compiler, il faut utiliser l'émulateur ripple:
 
-    cordova ripple android
+    cd platforms/android/assets/www
+	ripple emulate
 
-Cette commande va créer un serveur (par défault sur le port 8000), et vous pourrez y accéder via le navigateur. 
+Cette commande va créer un serveur (par défault sur le port 8000), et vous pourrez y accéder via le navigateur. Il faut se placer dans le répertoire www d'une platforme pour que le fichier cordova.js soit inclus.
+On peut aussi utiliser l'option --path si on veut rester à la racine du projet:
 
-Test des fonctionnalités
-------------------------
+    ripple emulate --path platforms/android/assets/www
 
-Le code source de l'application cordova/phonegap ce trouve dans le dossier www du projet.
+Les sources du projet étant dans /www, il faut exécuter une commande pour copier les fichiers de /www à platforms/android/assets/www. Pour cela, on utilise la commande cordova prepare:
+
+    cordova prepare android
+
+Utilisations des fonctionnalités natives
+----------------------------------------
+
+Depuis la version 3.0 de cordova, les fonctionnalités natives ne sont plus directement intégrées dans le projet mais doivent être rajouter sous forme de plugin.
+
+Pour installer un plugin dans un projet cordova, il faut utiliser la commande:
+
+    cordova plugin add <name-space-plugin>
+
+Par exemple, pour la caméra:
+
+    cordova plugin add org.apache.cordova.camera
+
+Vous pouvez trouver les fonctionnalités cordova ici: [http://docs.phonegap.com/en/3.4.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs](http://docs.phonegap.com/en/3.4.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs)
+
+Voici la liste de compatibilité des fonctionnalités par os: [http://docs.phonegap.com/en/3.4.0/guide_support_index.md.html#Platform%20Support](http://docs.phonegap.com/en/3.4.0/guide_support_index.md.html#Platform%20Support)
+
+Il y a de nombreux autres plugins disponible qui ne sont pas créer par cordova. heureusement, cordova intègre un moteur de recherche pour trouver facilement des plugin. Par exemple, si l'on veut utiliser un scaner de codebar / qr code, on peut faire la recherche:
+
+    cordova plugin search bar code
 
 ### Base de code
 
@@ -67,14 +100,13 @@ Créer les pages pour chaque bouton (vous être libre d'utiliser votre framework
 ### Accelerometre
 
 Cette page doit afficher les information de l'accéléromètre du téléphone toutes les 100ms.
-[Doc](http://docs.phonegap.com/en/2.9.0/cordova_accelerometer_accelerometer.md.html#accelerometer.watchAcceleration)
+[Doc](https://github.com/apache/cordova-plugin-device-motion/blob/master/doc/index.md)
 
 ### Camera
 
 Cette page doit permettre de prendre une photo et de l'afficher sur la page.
 
-[Doc](http://docs.phonegap.com/en/2.9.0/cordova_camera_camera.md.html#Camera)
-[Doc 2](http://docs.phonegap.com/en/2.9.0/cordova_media_capture_capture.md.html#capture.captureImage)
+[Doc](https://github.com/apache/cordova-plugin-camera/blob/master/doc/index.md)
 
 Bonus: Prendre plusieurs photos pour faire une mini galery.
 
@@ -82,7 +114,7 @@ Bonus: Prendre plusieurs photos pour faire une mini galery.
 
 Cette page doit afficher les information du compas toutes les 100ms.
 
-[Doc](http://docs.phonegap.com/en/2.9.0/cordova_compass_compass.md.html#Compass)
+[Doc](https://github.com/apache/cordova-plugin-device-orientation/blob/master/doc/index.md)
 
 Bonus: Faire une flèche qui pointe vers le nord (tip: -webkit-transform)
 
@@ -90,7 +122,7 @@ Bonus: Faire une flèche qui pointe vers le nord (tip: -webkit-transform)
 
 Cette page doit lister tous les noms des contactes du téléphones. Au clique sur un contact, on affiche toutes les informations de ce contacte.
 
-[Doc](http://docs.phonegap.com/en/2.9.0/cordova_contacts_contacts.md.html#Contacts)
+[Doc](https://github.com/apache/cordova-plugin-contacts/blob/master/doc/index.md)
 
 Bonus: Faire un champs de recherce pour filtrer les contactes.
 
@@ -98,7 +130,7 @@ Bonus: Faire un champs de recherce pour filtrer les contactes.
 
 Créer une page qui affiche toutes les informations du téléphone
 
-[Doc](http://docs.phonegap.com/en/2.9.0/cordova_device_device.md.html#Device)
+[Doc](https://github.com/apache/cordova-plugin-device/blob/master/doc/index.md)
 
 ### Geolocation
 
@@ -114,7 +146,7 @@ Créer une page qui affiche les données sur la localisation du téléphone:
 
 Bonus: Afficher la position sur une google map
 
-[Doc](http://docs.phonegap.com/en/2.9.0/cordova_geolocation_geolocation.md.html#Geolocation)
+[Doc](https://github.com/apache/cordova-plugin-geolocation/blob/master/doc/index.md)
 
 ### Notification
 
