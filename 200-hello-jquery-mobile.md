@@ -24,7 +24,7 @@ Créer une page index.html et inclure jquery et jquery mobile.
 
 ### Etape 2 : Première page
 
-Créer une première page avec en header le title "Checklist" et en content "Hello world".
+Créer une première page avec en header(data-role) le title "Checklist" et en content "Hello world".
 Cette page aura comme id "list"
 
 ### Etape 3 : Deuxième page et lien
@@ -40,23 +40,29 @@ Changer le lien de la page 1 pour pointer vers le nouveau fichier. (Template sin
 
 ### Etape 5 : Bouton back
 
-Dans la deuxième page, ajouter un bouton back pour revenir sur la page précédante dans le header (cf section header des ressources)
+Dans la deuxième page, ajouter un bouton back pour revenir sur la page précédante dans le header
+[Doc](http://demos.jquerymobile.com/1.4.2/toolbar/#Addingbackbuttontoheader)
 
 ### Etape 6 : Transition
 
 Ajouter une transition de type "slide" lors de la naviagation entre la page list et la page view
+[Doc](http://demos.jquerymobile.com/1.3.2/widgets/transitions/)
 
 ### Etape 7 : List
 
 Dans la première page, supprimer le content et ajouté y une liste de liens en dure vers la page view.
+
 Exemple:
 - Checklist 1
 - Checklist 2
 - Checklist 3
 
+[Doc](http://demos.jquerymobile.com/1.4.2/transitions/listview/)
+
 ### Etape 8 : Filtre de recherce
 
 Ajouter à cette liste un filtre de recherche.
+[Doc](http://demos.jquerymobile.com/1.4.2/transitions/filterable/)
 
 ### Etape 9 : 
 
@@ -67,8 +73,9 @@ Par exemple:
 - Tâche 2
 - Tâche 3
 
-### Etape 10 : Le formulaire d'édition
+[Doc](http://demos.jquerymobile.com/1.4.2/transitions/checkboxradio-checkbox/#Verticalgroup)
 
+### Etape 10 : Le formulaire d'édition
 - Créer un nouveau fichier form.html.
 - Ajouter un premier champs text en mettant en placeholder "Nom de la checklist".
 - Ajouter ensuite un control group avec plusieurs champs textes (qui vont correspondre au différentes tâches de la checklist).
@@ -76,11 +83,14 @@ Par exemple:
 - Ajouter un title dans le header: "Edit Checklist 1"
 - Ajouter un bouton "Sauvegarder" dans le footer avec comme icone un "check"
 
+[Icons](http://demos.jquerymobile.com/1.4.2/transitions/icons/)
+
 ### Etape 11 : Lien vers le formulaire
 
 - Dans la page list, ajouter en footer un bouton "Ajouter une checklist" pointant vers la page form
 - Dans la listview, ajouter pour chaque ligne des Split button avec comme icone un "gear" pointant vers la page form
 (Cela va permettre de respectivement ajouter et éditer une checklist)
+[Doc](http://demos.jquerymobile.com/1.4.2/listview/#Splitbuttons)
 
 ### Etape 12 : Script
 
@@ -109,7 +119,7 @@ Par exemple:
 		  {name: 'Task3', done: true},
 		]
       }
-	]
+	}
 
 ### Etape 14 : Page de list dynamique
 
@@ -122,6 +132,7 @@ Tips:
 - Utiliser la méthode jquery "html()" pour vider la liste
 - Utiliser la méthode jquery "append()" pour ajouter des éléments à la listview
 - Ne pas oublier de rafraichir de listview une fois que les éléments sont dynamiquement créé(.listview("refresh"))
+- Utiliser la méthode on pour gérer les évènements. [Doc](http://www.w3schools.com/jquery/event_on.asp)
 
 ### Etape 15: Page view dynamique
 
@@ -164,17 +175,4 @@ Helper pour récupérer le paramètre de l'url:
 - Remplir l'object checklists avec les données du localstorage avec la clé "checklists"
 - Lors de chaque action sur l'object checklists, sauvegarder les changement dans le localstorage avec la clé checklist
 
-Ressources
-----------
-- [Structure d'une page jquery](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-anatomy.html)
-- [Les liens](http://view.jquerymobile.com/1.3.1/dist/demos/widgets/links/)
-- [les headers](http://view.jquerymobile.com/1.3.1/dist/demos/widgets/headers/)
-- [Les transitions](http://jquerymobile.com/demos/1.3.0-beta.1/docs/pages/page-transitions.html)
-- [Les listes](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/index.html)
-- [Les checkboxes](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/checkboxes/)
-- [Text input](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/textinputs/)
-- [Forms](http://jquerymobile.com/demos/1.3.0-beta.1/docs/forms/docs-forms.html)
-- [Split button](http://jquerymobile.com/demos/1.3.0-beta.1/docs/lists/lists-split.html)
-- [Base script](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/globalconfig.html)
-- [Events](http://jquerymobile.com/demos/1.3.0-beta.1/docs/api/events.html)
-- [Localstorage](http://www.lafermeduweb.net/billet/le-stockage-local-en-html5-localstorage-942.html)
+[Doc](http://www.lafermeduweb.net/billet/le-stockage-local-en-html5-localstorage-942.html)
