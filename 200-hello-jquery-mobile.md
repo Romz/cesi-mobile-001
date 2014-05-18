@@ -1,4 +1,4 @@
-exporHello World jQuery mobile
+Hello World jQuery mobile
 =========================
 
 Intro
