@@ -20,6 +20,7 @@ Etapes
 ### Etape 1 : Installation
 
 Créer une page index.html et inclure jquery et jquery mobile.
+[Doc](http://demos.jquerymobile.com/1.4.2/pages/)
 
 ### Etape 2 : Première page
 
@@ -30,7 +31,7 @@ Cette page aura comme id "list"
 
 Dans le même fichier html, ajouter une deuxième page avec en header "Checklist 1" et en content "todo".
 Cette page aura l'id "view"
-Ajouter dans la première page un liens vers la nouvel page, en utilisant l'id. (Template multi page)
+Ajouter dans la première page un liens vers la nouvel page, en utilisant l'id. ([Template multi page](http://demos.jquerymobile.com/1.4.2/pages/#Multi-pagetemplatestructure))
 
 ### Etape 4 : Séparation des fichiers
 

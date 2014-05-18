@@ -6,6 +6,10 @@ Installation pour android
 
 Dans un premier temps, il faut installer l'utilitaire en ligne de commande cordova. Vous pouvez trouver le guide d'installation ici: [http://docs.phonegap.com/en/3.4.0/guide_cli_index.md.html#The%20Command-Line%20Interface](http://docs.phonegap.com/en/3.4.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
+Cordova s'install avec le manager de paquet node 'npm'. Pour pouvoir télécharger les paquets derrière un proxy, il faut utiliser la commande:
+
+    npm config set proxy http://<user>:<pass>@<ip_proxy>:<port_proxy>
+
 Il faut ensuite installer le sdk android. Vous pouvez trouver le guide d'installation ici: [http://docs.phonegap.com/en/3.4.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide](http://docs.phonegap.com/en/3.4.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
 Cordova utilise ant pour créer les projets android. Vous pouvez télécharger ant ici: [http://ant.apache.org/bindownload.cgi](http://ant.apache.org/bindownload.cgi).
