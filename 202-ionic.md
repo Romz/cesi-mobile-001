@@ -79,7 +79,6 @@ Tips:
 Les webservices sont fourni par un Drupal. Le compte admin est:
 
 login:Ril12
-
 pass:ril12
 
 
@@ -94,8 +93,8 @@ Vous pouvez filtrer sur le nom du produit ou sur son code bar en ajoutanten para
 - barcode=uncodebar
 
 Ex:
-- http://ip/services/api/views/products.json?barcode=351545214
-- http://ip/services/api/views/products.json?name="chips"
+    http://ip/services/api/views/products.json?barcode=351545214
+    http://ip/services/api/views/products.json?name="chips"
 
 #### Récupération des magasins
 
