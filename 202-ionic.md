@@ -43,6 +43,29 @@ Voici les mockups:
 
 ![Mockup produits](images/ionic/liste-produit.PNG)
 
+#### Détails produit ####
+
+![Mockup detail produit](images/ionic/detail-produit.PNG)
+
+#### Ajout / Edition produit ####
+
+![Mockup ajout produit](images/ionic/ajout-produit.PNG)
+
+#### Ajout prix ####
+
+![Mockup ajout prix](images/ionic/ajout-prix.PNG)
+
+#### Page magasins ####
+
+![Mockup magasins](images/ionic/liste-magasin.PNG)
+
+#### Détail magasin ####
+
+![Mockup detail magasin](images/ionic/detail-magasin.PNG)
+
+#### Ajout magasin ####
+
+![Mockup Ajout magasin](images/ionic/nouveau-magasin.PNG)
 
 
 ### Intégration du webservice
