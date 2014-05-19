@@ -39,6 +39,11 @@ L'application doit permettre de pouvoir gérer plusieurs prix par produit et par
 
 Voici les mockups: 
 
+Tips:
+- Utilisation des tabs : [Doc](http://ionicframework.com/docs/api/directive/ionTabs/)
+- Utilisation des listes: [Doc](http://ionicframework.com/docs/api/directive/ionList/)
+- 
+
 #### Page produits ####
 
 ![Mockup produits](images/ionic/liste-produit.PNG)
@@ -68,6 +73,7 @@ Voici les mockups:
 ![Mockup Ajout magasin](images/ionic/nouveau-magasin.PNG)
 
 
+
 ### Intégration du webservice
 
 Pour créer un contenu sur le webservice, il faut appeler l'url :
@@ -75,7 +81,7 @@ http://<ip>/services/api/node.json
 
 
 
-Création d'un magasin:
+#### Création d'un magasin:
 
     {
 	  "title":"Nom du magasin",
@@ -102,3 +108,37 @@ Création d'un magasin:
 	  }
 	}
 
+#### Création d'un produit
+
+    {
+	  "title":"Nom du produit",
+	  "type":"product",
+	  "field_barcode" : {
+	    "und": [
+          { "value":"Code bar du produit" }
+        ]
+      },
+	  "field_description": {
+	    "und":[
+	      { "value": "Description du produit" }
+        ]
+	  }
+	}
+
+#### Création d'un prix
+
+    {
+	  "title":"Nom du prix",
+	  "type":"price",
+	  "field_product": {
+        "und": <nid produit>
+      }
+	  "field_store": {
+	    "und" : <nid store>
+	  }
+	  "field_price": {
+	    "und" : [
+          {value: "prix produit"}
+        ]
+	  }
+	}
