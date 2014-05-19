@@ -110,12 +110,15 @@ Vous pouvez filtrer sur le nom du magasin et la ville:
 - city=ville
 
 Ex:
-- http://<ip>/services/api/views/stores.json?name=Carrefour
-- http://<ip>/services/api/views/stores.json?city=Rouen
+
+    http://<ip>/services/api/views/stores.json?name=Carrefour
+	
+    http://<ip>/services/api/views/stores.json?city=Rouen
 
 #### Récupération des prix
 
 Pour récupérer la liste des prix, il faut appeler l'url suivante avec la méthode GET:
+
     http://<ip>/services/api/views/prices.json
 
 Vous pouvez filtrer sur le nid d'un produit ou sur le nid d'un magasin
@@ -124,6 +127,7 @@ Vous pouvez filtrer sur le nid d'un produit ou sur le nid d'un magasin
 - store=nidstore
 
 Ex:
+
     http://<ip>/services/api/views/prices.json?product=2
 	
 	http://<ip>/services/api/views/prices.json?store=1
