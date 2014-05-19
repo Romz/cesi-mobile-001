@@ -41,7 +41,7 @@ Voici les mockups:
 
 #### Page produits ####
 
-![Mockup produits](images/ionic/liste-produits.PNG)
+![Mockup produits](images/ionic/liste-produit.PNG)
 
 
 
