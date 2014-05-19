@@ -42,7 +42,6 @@ Voici les mockups:
 Tips:
 - Utilisation des tabs : [Doc](http://ionicframework.com/docs/api/directive/ionTabs/)
 - Utilisation des listes: [Doc](http://ionicframework.com/docs/api/directive/ionList/)
-- 
 
 #### Page produits ####
 
