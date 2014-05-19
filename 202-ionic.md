@@ -74,12 +74,55 @@ Tips:
 
 
 
-### Intégration du webservice
+### Intégration des webservices
 
-Pour créer un contenu sur le webservice, il faut appeler l'url :
-http://<ip>/services/api/node.json
+Les webservices sont fourni par un Drupal. Le compte admin est:
+login:Ril12
+pass:ril12
 
 
+#### Récupération des produits
+
+Pour récupérer les produits, il faut appeler l'url suivante avec la méthode GET:
+
+    http://<ip>/services/api/views/products.json
+
+Vous pouvez filtrer sur le nom du produit ou sur son code bar en ajoutanten paramètre de l'url:
+- name=Nomproduit
+- barcode=uncodebar
+
+Ex:
+    http://<ip>/services/api/views/products.json?barcode=351545214
+	http://<ip>/services/api/views/products.json?name="chips"
+
+#### Récupération des magasins
+
+Pour récupérer les magasins, il faut appeler l'url suivante avec la méthode GET:
+
+    http://<ip>/services/api/views/stores.json
+
+Vous pouvez filtrer sur le nom du magasin et la ville:
+
+- name=nommagasin
+- city=ville
+
+Ex:
+    http://<ip>/services/api/views/stores.json?name=Carrefour
+	http://<ip>/services/api/views/stores.json?city=Rouen
+
+#### Récupération des prix
+
+Pour récupérer la liste des prix, il faut appeler l'url suivante avec la méthode GET:
+    http://<ip>/services/api/views/prices.json
+
+Vous pouvez filtrer sur le nid d'un produit ou sur le nid d'un magasin
+
+- product=nidproduct
+- store=nidstore
+
+Ex:
+    http://<ip>/services/api/views/prices.json?product=2
+	http://<ip>/services/api/views/prices.json?store=1
 
 #### Création d'un magasin:
 
