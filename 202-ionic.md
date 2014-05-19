@@ -78,8 +78,8 @@ Tips:
 
 Les webservices sont fourni par un Drupal. Le compte admin est:
 
-login:Ril12
-pass:ril12
+- login:Ril12
+- pass:ril12
 
 
 #### Récupération des produits
