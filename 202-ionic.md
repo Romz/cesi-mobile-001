@@ -93,6 +93,7 @@ Vous pouvez filtrer sur le nom du produit ou sur son code bar en ajoutanten para
 
 Ex:
     http://<ip>/services/api/views/products.json?barcode=351545214
+	
 	http://<ip>/services/api/views/products.json?name="chips"
 
 #### Récupération des magasins
@@ -108,6 +109,7 @@ Vous pouvez filtrer sur le nom du magasin et la ville:
 
 Ex:
     http://<ip>/services/api/views/stores.json?name=Carrefour
+	
 	http://<ip>/services/api/views/stores.json?city=Rouen
 
 #### Récupération des prix
@@ -122,6 +124,7 @@ Vous pouvez filtrer sur le nid d'un produit ou sur le nid d'un magasin
 
 Ex:
     http://<ip>/services/api/views/prices.json?product=2
+	
 	http://<ip>/services/api/views/prices.json?store=1
 
 #### Création d'un magasin:
