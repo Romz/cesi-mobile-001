@@ -108,9 +108,8 @@ Vous pouvez filtrer sur le nom du magasin et la ville:
 - city=ville
 
 Ex:
-    http://<ip>/services/api/views/stores.json?name=Carrefour
-	
-	http://<ip>/services/api/views/stores.json?city=Rouen
+- http://<ip>/services/api/views/stores.json?name=Carrefour
+- http://<ip>/services/api/views/stores.json?city=Rouen
 
 #### Récupération des prix
 
