@@ -39,6 +39,10 @@ L'application doit permettre de pouvoir gérer plusieurs prix par produit et par
 
 Voici les mockups: 
 
+#### Page produits ####
+
+![Mockup produits](images/ionic/liste-produits.PNG)
+
 
 
 ### Intégration du webservice
