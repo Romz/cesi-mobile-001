@@ -94,6 +94,7 @@ Vous pouvez filtrer sur le nom du produit ou sur son code bar en ajoutanten para
 
 Ex:
     http://ip/services/api/views/products.json?barcode=351545214
+
     http://ip/services/api/views/products.json?name="chips"
 
 #### Récupération des magasins
