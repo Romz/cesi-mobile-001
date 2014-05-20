@@ -41,10 +41,10 @@ Voici les mockups:
 
 
 
-### Intégration du webservice
+### Intégration du webservice ###
 
 Pour créer un contenu sur le webservice, il faut appeler l'url :
-http://<ip>/services/api/node.json
+http://<ip_serveur>/services/api/node.json
 
 
 
