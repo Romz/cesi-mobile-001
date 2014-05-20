@@ -21,7 +21,6 @@ Vous pouvez trouver la procédure d'installation et de création de projets [ici
 
 Pour ce tp, nous allons créer un projet de type tabs.
 
-
 Etapes
 ------
 
@@ -188,6 +187,29 @@ Ex:
 	  }
 	}
 
+
+#### Ajout d'une image
+
+
+    var input = document.getElementById('id_input_file');
+	if(input.files.length > 0) {
+	  var reader = new FileReader();
+	  var file = input.files[0];
+
+      reader.onloadend = function(e) { //Action a effectuer quand le fichier a fini d'être charger
+	    var filemime = e.target.result.split(';')[0].split(':')[1];
+		var photo = e.target.result.split(';')[1].split(',')[1];
+		var params = {
+		  filesize: file.size,
+		  filename: file.name,
+		  file: photo,
+		  filemime:filemime
+		};
+
+        //Appeler l'url http://romz.hd.free.fr/services/api/file en poste avec en datas params
+       
+	  }
+	}
 
 Resources
 ---------
