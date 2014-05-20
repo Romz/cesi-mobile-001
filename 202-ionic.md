@@ -221,10 +221,31 @@ Pour le menu des nouvelles pages, on pourra faire un side menu:
 
 ### Système de favoris
 
-Gérer un système de favoris sur les produits en en stoquant les nids des produits dans une [base de donnée sqlite](http://www.lafermeduweb.net/billet/html5sql-js-utilisez-du-sql-cote-client-avec-les-html5-web-database-1277.html)
+Gérer un système de favoris sur les produits en en stoquant les nids des produits dans une [base de donnée sqlite](http://www.lafermeduweb.net/billet/html5sql-js-utilisez-du-sql-cote-client-avec-les-html5-web-database-1277.html) ou avec le [localstorage](http://www.lafermeduweb.net/billet/le-stockage-local-en-html5-localstorage-942.html)
 - Ajouter une entré de menu dans le side menu
 - Créer une nouvelle page qui liste les produits mis en favoris
 - Ajouter un bouton dans les pages produits pour mettre en favoris
 - Ajouter un [delete button](http://ionicframework.com/docs/api/directive/ionDeleteButton/) sur la liste des favoris
 
+### Gestion des cartes de fidélités
 
+Ajouter la possibilité à l'utilisateur de renseigner des cartes de fidélité
+
+- Ajouter une entré de menu dans le side menu
+- Créer une page qui liste les cartes de fidélités (lien + nom de la carte + bouton d'ajout de carte)
+- Ajouter bouton pour scanner les cartes de fidélité
+- Quand la carte de fidélité est scanée, rediriger vers la page pour lui assigner un nom (champs texte + bouton de sauvegare)
+- Gérer les carte en localstorage ou en sqlite
+
+
+### Géolocalisation
+
+Ajouter une gestion de la géolocalisation pour n'afficher que les prix des magasins aux alentour. (Utilisation de google maps api)
+
+### Gestion des catégories
+
+Ajouter la possibilité de gérer des catégories de produits (Fruits et légumes, high-tech etc)
+
+### Liste de courses
+
+Ajouter la possibilité de créer une liste de course en scanant les produits.
