@@ -39,10 +39,6 @@ L'application doit permettre de pouvoir gérer plusieurs prix par produit et par
 
 Voici les mockups: 
 
-Tips:
-- Utilisation des tabs : [Doc](http://ionicframework.com/docs/api/directive/ionTabs/)
-- Utilisation des listes: [Doc](http://ionicframework.com/docs/api/directive/ionList/)
-
 #### Page produits ####
 
 ![Mockup produits](images/ionic/liste-produit.PNG)
@@ -192,3 +188,43 @@ Ex:
         ]
 	  }
 	}
+
+
+Resources
+---------
+
+### Ionic:
+
+[Headers](http://ionicframework.com/docs/api/directive/ionHeaderBar/)
+[Tabs](http://ionicframework.com/docs/api/directive/ionTabs/)
+[Vues](http://ionicframework.com/docs/api/directive/ionNavView/)
+[Listes](http://ionicframework.com/docs/api/directive/ionList/)
+[Icons](http://ionicons.com/)
+
+
+### Angular
+
+[Filtres](https://docs.angularjs.org/api/ng/filter/filter)
+[Ajax](https://docs.angularjs.org/api/ng/service/$http)
+[ngRepeat](https://docs.angularjs.org/api/ng/directive/ngRepeat)
+[ngModel](https://docs.angularjs.org/api/ng/directive/ngModel)
+[ngClass](https://docs.angularjs.org/api/ng/directive/ngClass)
+[ngBindHtml](https://docs.angularjs.org/api/ng/directive/ngBindHtml)
+[ngOptions](https://docs.angularjs.org/api/ng/directive/select)
+[States](https://github.com/angular-ui/ui-router)
+
+Bonus
+-----
+
+Pour le menu des nouvelles pages, on pourra faire un side menu:
+[Side menu](http://ionicframework.com/docs/api/directive/ionSideMenus/)
+
+### Système de favoris
+
+Gérer un système de favoris sur les produits en en stoquant les nids des produits dans une [base de donnée sqlite](http://www.lafermeduweb.net/billet/html5sql-js-utilisez-du-sql-cote-client-avec-les-html5-web-database-1277.html)
+- Ajouter une entré de menu dans le side menu
+- Créer une nouvelle page qui liste les produits mis en favoris
+- Ajouter un bouton dans les pages produits pour mettre en favoris
+- Ajouter un [delete button](http://ionicframework.com/docs/api/directive/ionDeleteButton/) sur la liste des favoris
+
+
