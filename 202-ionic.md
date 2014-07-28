@@ -79,7 +79,7 @@ Les webservices sont fourni par un Drupal. Le compte admin est:
 
 Pour récupérer les produits, il faut appeler l'url suivante avec la méthode GET:
 
-    http://10.176.227.80:8080/services/api/views/products.json
+    http://romz.hd.free.fr/services/api/views/products.json
 
 Vous pouvez filtrer sur le nom du produit ou sur son code bar en ajoutanten paramètre de l'url:
 - name=Nomproduit
@@ -87,15 +87,15 @@ Vous pouvez filtrer sur le nom du produit ou sur son code bar en ajoutanten para
 
 Ex:
 
-    http://10.176.227.80:8080/services/api/views/products.json?barcode=351545214
+    http://romz.hd.free.fr/services/api/views/products.json?barcode=351545214
 
-    http://10.176.227.80:8080/services/api/views/products.json?name="chips"
+    http://romz.hd.free.fr/services/api/views/products.json?name="chips"
 
 #### Récupération des magasins
 
 Pour récupérer les magasins, il faut appeler l'url suivante avec la méthode GET:
 
-    http://10.176.227.80:8080/services/api/views/stores.json
+    http://romz.hd.free.fr/services/api/views/stores.json
 
 Vous pouvez filtrer sur le nom du magasin et la ville:
 
@@ -104,15 +104,15 @@ Vous pouvez filtrer sur le nom du magasin et la ville:
 
 Ex:
 
-    http://10.176.227.80:8080/services/api/views/stores.json?name=Carrefour
+    http://romz.hd.free.fr/services/api/views/stores.json?name=Carrefour
 	
-    http://10.176.227.80:8080/services/api/views/stores.json?city=Rouen
+    http://romz.hd.free.fr/services/api/views/stores.json?city=Rouen
 
 #### Récupération des prix
 
 Pour récupérer la liste des prix, il faut appeler l'url suivante avec la méthode GET:
 
-    http://10.176.227.80:8080/services/api/views/prices.json
+    http://romz.hd.free.fr/services/api/views/prices.json
 
 Vous pouvez filtrer sur le nid d'un produit ou sur le nid d'un magasin
 
@@ -121,7 +121,7 @@ Vous pouvez filtrer sur le nid d'un produit ou sur le nid d'un magasin
 
 Ex:
 
-	http://10.176.227.80:8080/services/api/views/prices.json?product=2
+	http://romz.hd.free.fr/services/api/views/prices.json?product=2
 	
 	http://romz.hd.free.fr/services/api/views/prices.json?store=1
 
