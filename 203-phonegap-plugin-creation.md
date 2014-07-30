@@ -45,17 +45,11 @@ Dans cette balise plugin nous avons ensuite la balise name qui contien le nom du
 
     <name>SMSPlugin</name>
 
-Ensuite viens la balise engines qui permet de définir les version de phonegap compatible avec le plugin
-
-    <engines>
-	    <engine name="cordova" version=">=2.0.0" />
-    </engines>
-
 On a ensuite la définition du module js
 
     <js-module src="www/sms.js" name="SMSPlugin">
         <clobbers target="sms" />
-	</js-module>
+    </js-module>
 
 L'attribut src défini le chemin du module javascript à inclure.
 L'attribut name sert peut être à quelquechose
@@ -90,7 +84,7 @@ L'attribut value correspond au packack.<nom de la class> du plugin. C'est cet é
 Ici on ajoute dans le fichier AndroidManifest.xml la permission pour envoyer les sms.
 
     </platform>
-	</plugin>
+    </plugin>
 
 On ferme les balises pour avoir un fichier xml complet
 
@@ -130,8 +124,8 @@ La première chose à faire est de mettre le package:
 Il faut ensuite ajouter les différents imports:
 
     import org.json.JSONArray;
-	import org.json.JSONException;
-	import org.json.JSONObject;
+    import org.json.JSONException;
+    import org.json.JSONObject;
 
     import android.app.Activity;
     import android.content.Intent;
