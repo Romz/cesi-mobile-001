@@ -15,13 +15,14 @@ Un plugin phonegap pour android est en général composé d'au moins 3 fichiers:
 
 On va donc créer ces fichiers avec la hiérarchie suivante:
 
-    - SMSPlugin
-        - plugin.xml
-        - www
-            - sms.js
-        - scr
-            - android
-	        - SMSPlugin.java
+- SMSPlugin
+  - plugin.xml
+  - www
+    - sms.js
+  - src
+    - android
+      - SMSPlugin.java
+
 
 Le fichier plugin.xml
 ---------------------
