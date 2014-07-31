@@ -214,10 +214,9 @@ Pour créer des contenus, il faut appeler l'url suivante en POST:
 		  file: photo,
 		  filemime:filemime
 		};
-		reader.readAsDataURL(file);
-        //Appeler l'url http://romz.hd.free.fr/services/api/file en poste avec en datas params
-       
+           //Appeler l'url http://romz.hd.free.fr/services/api/file en poste avec en datas params
 	  }
+	  reader.readAsDataURL(file);
 	}
 
 Resources
