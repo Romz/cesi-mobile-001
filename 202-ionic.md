@@ -145,6 +145,11 @@ Ex:
 	      { "value":"Ville" }
         ]
       },
+      "field_image":{
+	    "und":[
+	      { "fid":"fid du fichier" }
+        ]
+      },
 	  "field_opening_hours": {
 	    "und" : [
 	      { "value": "Horraires" }
