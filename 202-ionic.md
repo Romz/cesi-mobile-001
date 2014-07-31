@@ -125,6 +125,10 @@ Ex:
 	
 	http://romz.hd.free.fr/services/api/views/prices.json?store=1
 
+Pour créer des contenus, il faut appeler l'url suivante en POST:
+
+	http://romz.hd.free.fr/services/api/node.json
+
 #### Création d'un magasin:
 
     {
@@ -210,8 +214,8 @@ Ex:
 		  file: photo,
 		  filemime:filemime
 		};
-		reader.readAsDataURL(current);
-        //Appeler l'url http://10.176.227.80:8080/services/api/file en poste avec en datas params
+		reader.readAsDataURL(file);
+        //Appeler l'url http://romz.hd.free.fr/services/api/file en poste avec en datas params
        
 	  }
 	}
