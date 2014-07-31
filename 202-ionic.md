@@ -210,7 +210,7 @@ Ex:
 		  file: photo,
 		  filemime:filemime
 		};
-
+		reader.readAsDataURL(current);
         //Appeler l'url http://10.176.227.80:8080/services/api/file en poste avec en datas params
        
 	  }
