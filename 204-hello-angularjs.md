@@ -13,6 +13,7 @@ Requirements
 - Un navigateur assez récent pour bien gérer l'html5 (chrome, safari, firefox)
 - Un éditeur de texte
 - Des bases en javascript
+- Git
 
 Etapes
 ------
