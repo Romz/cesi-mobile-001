@@ -25,47 +25,47 @@ Etapes
 - Supprimer les balises autres que script dans le body du fichier index.html
 - Supprimer tous les fichiers du dossier **partials**
 - Supprimer les 3 lignes du callback de la fonction config dans app.js
-- Supprimer les 2 controllers dans js/controllers.js
-- Télécharger une version de [twitter bootstrap](http://twitter.github.io/bootstrap/) 
+- Supprimer les 2 [controllers](https://docs.angularjs.org/guide/controller) dans js/controllers.js
+- Télécharger une version de [twitter bootstrap](http://getbootstrap.com/getting-started/#download) 
 - Inclure dans le index.html le fichier boostrap.min.css
 
 ### Etape 2 : Création de la première page
 
-- Dans le fichier index.html, ajouter dans le body la directive **ng-view**
+- Dans le fichier index.html, ajouter dans le body la [directive](https://docs.angularjs.org/guide/directive) **ng-view**
 - Créer un nouveau fichier list.html dans le répertoire partials et y ajouter le texte suivant :  "page liste"
-- Ajouter le controller ListController dans le fichier controllers.js (ne pas oublier de passer $scope dans le constructeur)
-- Dans app.js, configurer la route vers "checklists" avec en template list.html et en controller ListController
+- Ajouter le [controller](https://docs.angularjs.org/guide/controller) ListController dans le fichier controllers.js (ne pas oublier de passer $scope dans le constructeur)
+- Dans app.js, configurer la [route](https://docs.angularjs.org/tutorial/step_07) vers "checklists" avec en template list.html et en controller ListController
 - Ajouter la page checklists en chemin par défault
 
 ### Etape 3 : Navbars
 
-- Au début du fichier list.html, ajouter une navbar avec en title "Checklists"
-- Ajouter dans cette navbar un lien en forme de bouton avec une icone "+"
+- Au début du fichier list.html, ajouter une [navbar](http://getbootstrap.com/components/#navbar) avec en titre "Checklists"
+- Ajouter dans cette [navbar](http://getbootstrap.com/components/#navbar) un lien en forme de bouton avec une icone "+"
 
 ### Etape 4 : Deuxième page
 
 - Créer un nouveau fichier view.html dans le dossier partials
-- Ajouter une navbar avec "Checklist 1" en title et un bouton back poitant vers la page list
+- Ajouter une [navbar](http://getbootstrap.com/components/#navbar) avec "Checklist 1" en title et un bouton back poitant vers la page list
 - Ajouter dans le contenu "Contenu de la checklist 1"
-- Ajouter le controller ViewController dans controllers.js (passer $scope et $routeParams en paramètre du constructeur)
+- Ajouter le [controller](https://docs.angularjs.org/guide/controller) ViewController dans controllers.js (passer $scope et $routeParams en paramètre du constructeur)
 - Dans app.js, créer la route pour accéder à cette page sous la form "checklists/:checklistId"
 - Dans la page list, créer un lien vers la nouvelle page (vers checklists/1 par exemple)
 
 ### Etape 5 : Page List
 
-- Dans le fichier list.html, ajouter une list en nav tabs stacked (pour donner un effet list mobile)
+- Dans le fichier list.html, ajouter une list en [nav tabs stacked](http://getbootstrap.com/components/#nav-pills) (pour donner un effet list mobile)
 - Les liens de la liste doivent pointer vers la page view
-- Dans les liens de la liste, ajouter une icon-chevron-right avec la class pull-right(pour la mettre a droite)
-- Dans le header de la liste, ajouter à droite une bouton pour éditer la checklist avec un icon-pencil (Pour un affichage plus propre, utiliser le fluid grid system de bootstrap)
+- Dans les liens de la liste, ajouter une icone chevron droit avec la class pull-right(pour la mettre a droite)
+- Dans le header de la liste, ajouter à droite une bouton pour éditer la checklist avec une icone crayon (Pour un affichage plus propre, utiliser le fluid grid system de bootstrap)
 
 ### Etape 6 : Page View
 
-- Dans le fichier view.html, ajouter une list en nav tabs stacked
-- Ajouter dans les liens à droite des icon-ok et remove
+- Dans le fichier view.html, ajouter une list en [nav tabs stacked](http://getbootstrap.com/components/#nav-pills)
+- Ajouter dans les liens à droite des icones ok et remove
 
 ### Etape 7 : Page Formulaire
 
-- Créer une page pour le formulaire avec 2 chemins mais un seul controller
+- Créer une page pour le formulaire avec 2 chemins mais un seul [controller](https://docs.angularjs.org/guide/controller)
   - Pour l'ajout le chemin est checklists/add
   - Pour l'édition le chemin est checklists/edit/:checkListsId
 - Ajouter un header avec un titre
@@ -76,7 +76,7 @@ Etapes
 
 ### Etape 8 : Page list dynamique
 
-- Ajouter un controller AppController au body (directive ngController).
+- Ajouter un [controller](https://docs.angularjs.org/guide/controller) AppController au body (directive ngController).
 - Ajouter un attribut checklists à l'objet $scope qui contiendra les données de la checklist.
 - Dans le fichier list.html, supprimer le contenu de la liste (les li)
 - Ajouter un li avec la directive ng-repeat pour parcourir l'object checklist
