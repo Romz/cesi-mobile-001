@@ -157,20 +157,20 @@ Ressources
 
 ### Angular
 
-- [Directives](http://docs.angularjs.org/guide/directive)
-- [Controllers](http://docs.angularjs.org/guide/dev_guide.mvc.understanding_controller)
-- [Routes](http://docs.angularjs.org/tutorial/step_07)
-- [Model & Scope](http://docs.angularjs.org/tutorial/step_02)
-- [Filtres](http://docs.angularjs.org/tutorial/step_03)
+- [Directives](https://docs.angularjs.org/guide/directive)
+- [Controllers](https://docs.angularjs.org/guide/controller)
+- [Routes](https://docs.angularjs.org/tutorial/step_07)
+- [Model & Scope](https://docs.angularjs.org/guide/scope)
+- [Filtres](https://docs.angularjs.org/guide/filter)
 
 ### Bootstrap
 
-- [Navbars](http://twitter.github.io/bootstrap/components.html#navbar)
-- [Buttons](http://twitter.github.io/bootstrap/base-css.html#buttons)
-- [Icons](http://twitter.github.io/bootstrap/base-css.html#icons)
-- [Navs](http://twitter.github.io/bootstrap/components.html#navs)
-- [Grid system](http://twitter.github.io/bootstrap/scaffolding.html#gridSystem)
-- [Forms](http://twitter.github.io/bootstrap/base-css.html#forms)
+- [Navbars](http://getbootstrap.com/components/#navbar)
+- [Buttons](http://getbootstrap.com/css/#buttons)
+- [Icons](http://getbootstrap.com/components/#glyphicons)
+- [Navs](http://getbootstrap.com/components/#nav)
+- [Grid system](http://getbootstrap.com/css/#grid)
+- [Forms](http://getbootstrap.com/css/#forms)
 
 ### Autre
 
