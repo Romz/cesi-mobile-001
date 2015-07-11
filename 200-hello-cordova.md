@@ -126,7 +126,7 @@ Cette page doit afficher les information du compas toutes les 100ms.
 
 [Doc](https://www.npmjs.com/package/cordova-plugin-device-orientation)
 
-Bonus: Faire une flèche qui pointe vers le nord (tip: -webkit-transform)
+Bonus: Faire une flèche qui pointe vers le nord (tip: css3 transform)
 
 ### Contact
 
