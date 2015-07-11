@@ -4,14 +4,17 @@ Hello phonegap
 Installation pour android
 -------------------------
 
-Dans un premier temps, il faut installer l'utilitaire en ligne de commande cordova. Vous pouvez trouver le guide d'installation ici: [http://docs.phonegap.com/en/3.4.0/guide_cli_index.md.html#The%20Command-Line%20Interface](http://docs.phonegap.com/en/3.4.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
+Dans un premier temps, il faut télécherger nodejs (si il n'est pas déjà installé).
+Vous pouvez trouver nodejs ici: [https://nodejs.org/](https://nodejs.org/).
 
-Cordova s'install avec le manager de paquet node 'npm'. Pour pouvoir télécharger les paquets derrière un proxy, il faut utiliser la commande:
+Il faut ensuite installer l'utilitaire en ligne de commande cordova. Vous pouvez trouver le guide d'installation ici: [http://cordova.apache.org/docs/en/5.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface](http://cordova.apache.org/docs/en/5.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
+
+Cordova s'install avec le manager de paquet node 'npm'. Si vous avez des problêmes pour vous connecter à cause du proxy, vous pouvez utiliser les commandes suivantes (Remplacer les valeurs entre <>):
 
     npm config set proxy http://<user>:<pass>@<ip_proxy>:<port_proxy>
     npm config set https-proxy http://<user>:<pass>@<ip_proxy>:<port_proxy>
 
-Il faut ensuite installer le sdk android. Vous pouvez trouver le guide d'installation ici: [http://docs.phonegap.com/en/3.4.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide](http://docs.phonegap.com/en/3.4.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+Il faut ensuite installer le sdk android. Vous pouvez trouver le guide d'installation ici: [http://cordova.apache.org/docs/en/5.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide](http://cordova.apache.org/docs/en/5.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
 Cordova utilise ant pour créer les projets android. Vous pouvez télécharger ant ici: [http://ant.apache.org/bindownload.cgi](http://ant.apache.org/bindownload.cgi).
 Une fois téléchargé, il faut créer une variable d'environnement ANT_HOME pointant vers le répertoire ant. Il faut ensuite rajouter à la variable d'environnement PATH: %ANT_HOME%\bin sur winodws ou $ANT_HOME/bin sur linux / OSX.
@@ -80,13 +83,15 @@ Par exemple, pour la caméra:
 
     cordova plugin add org.apache.cordova.camera
 
-Vous pouvez trouver les fonctionnalités cordova ici: [http://docs.phonegap.com/en/3.4.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs](http://docs.phonegap.com/en/3.4.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs)
+Vous pouvez trouver les fonctionnalités cordova ici: [http://cordova.apache.org/docs/en/5.0.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs](http://cordova.apache.org/docs/en/5.0.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs)
 
-Voici la liste de compatibilité des fonctionnalités par os: [http://docs.phonegap.com/en/3.4.0/guide_support_index.md.html#Platform%20Support](http://docs.phonegap.com/en/3.4.0/guide_support_index.md.html#Platform%20Support)
+Voici la liste de compatibilité des fonctionnalités par os: [http://cordova.apache.org/docs/en/5.0.0/guide_support_index.md.html#Platform%20Support](http://cordova.apache.org/docs/en/5.0.0/guide_support_index.md.html#Platform%20Support)
 
 Il y a de nombreux autres plugins disponible qui ne sont pas créer par cordova. heureusement, cordova intègre un moteur de recherche pour trouver facilement des plugin. Par exemple, si l'on veut utiliser un scaner de codebar / qr code, on peut faire la recherche:
 
     cordova plugin search bar code
+    
+Sinon vous pouvez regarder sur le site [http://plugins.cordova.io/#/](http://plugins.cordova.io/#/)
 
 ### Base de code
 
@@ -105,13 +110,13 @@ Créer les pages pour chaque bouton (vous être libre d'utiliser votre framework
 ### Accelerometre
 
 Cette page doit afficher les information de l'accéléromètre du téléphone toutes les 100ms.
-[Doc](https://github.com/apache/cordova-plugin-device-motion/blob/master/doc/index.md)
+[Doc](https://www.npmjs.com/package/cordova-plugin-device-motion)
 
 ### Camera
 
 Cette page doit permettre de prendre une photo et de l'afficher sur la page.
 
-[Doc](https://github.com/apache/cordova-plugin-camera/blob/master/doc/index.md)
+[Doc](https://www.npmjs.com/package/cordova-plugin-camera)
 
 Bonus: Prendre plusieurs photos pour faire une mini galery.
 
@@ -119,7 +124,7 @@ Bonus: Prendre plusieurs photos pour faire une mini galery.
 
 Cette page doit afficher les information du compas toutes les 100ms.
 
-[Doc](https://github.com/apache/cordova-plugin-device-orientation/blob/master/doc/index.md)
+[Doc](https://www.npmjs.com/package/cordova-plugin-device-orientation)
 
 Bonus: Faire une flèche qui pointe vers le nord (tip: -webkit-transform)
 
@@ -127,7 +132,7 @@ Bonus: Faire une flèche qui pointe vers le nord (tip: -webkit-transform)
 
 Cette page doit lister tous les noms des contactes du téléphones. Au clique sur un contact, on affiche toutes les informations de ce contacte.
 
-[Doc](https://github.com/apache/cordova-plugin-contacts/blob/master/doc/index.md)
+[Doc](https://www.npmjs.com/package/cordova-plugin-contacts)
 
 Bonus: Faire un champs de recherce pour filtrer les contactes.
 
@@ -135,7 +140,7 @@ Bonus: Faire un champs de recherce pour filtrer les contactes.
 
 Créer une page qui affiche toutes les informations du téléphone
 
-[Doc](https://github.com/apache/cordova-plugin-device/blob/master/doc/index.md)
+[Doc](https://www.npmjs.com/package/cordova-plugin-device)
 
 ### Geolocation
 
@@ -151,7 +156,7 @@ Créer une page qui affiche les données sur la localisation du téléphone:
 
 Bonus: Afficher la position sur une google map
 
-[Doc](https://github.com/apache/cordova-plugin-geolocation/blob/master/doc/index.md)
+[Doc](https://www.npmjs.com/package/cordova-plugin-geolocation)
 
 ### Notification
 
