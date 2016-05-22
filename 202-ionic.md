@@ -69,17 +69,11 @@ Voici les mockups:
 
 ### Intégration des webservices
 
-Les webservices sont fourni par un Drupal. Le compte admin est:
-
-- login:Ril12
-- pass:ril12
-
-
 #### Récupération des produits
 
 Pour récupérer les produits, il faut appeler l'url suivante avec la méthode GET:
 
-    http://romz.hd.free.fr/services/api/views/products.json
+    http://romz.hd.free.fr:3000/products.json
 
 Vous pouvez filtrer sur le nom du produit ou sur son code bar en ajoutanten paramètre de l'url:
 - name=Nomproduit
@@ -87,15 +81,15 @@ Vous pouvez filtrer sur le nom du produit ou sur son code bar en ajoutanten para
 
 Ex:
 
-    http://romz.hd.free.fr/services/api/views/products.json?barcode=351545214
+    http://romz.hd.free.fr:3000/products.json?barcode=351545214
 
-    http://romz.hd.free.fr/services/api/views/products.json?name="chips"
+    http://romz.hd.free.fr:3000/products.json?name="chips"
 
 #### Récupération des magasins
 
 Pour récupérer les magasins, il faut appeler l'url suivante avec la méthode GET:
 
-    http://romz.hd.free.fr/services/api/views/stores.json
+    http://romz.hd.free.fr:3000/stores.json
 
 Vous pouvez filtrer sur le nom du magasin et la ville:
 
@@ -104,121 +98,70 @@ Vous pouvez filtrer sur le nom du magasin et la ville:
 
 Ex:
 
-    http://romz.hd.free.fr/services/api/views/stores.json?name=Carrefour
+    http://romz.hd.free.fr:3000/stores.json?name=Carrefour
 	
-    http://romz.hd.free.fr/services/api/views/stores.json?city=Rouen
+    http://romz.hd.free.fr:3000/stores.json?city=Rouen
 
-#### Récupération des prix
 
-Pour récupérer la liste des prix, il faut appeler l'url suivante avec la méthode GET:
+Pour créer des contenus, il faut appeler les urls en POST:
 
-    http://romz.hd.free.fr/services/api/views/prices.json
-
-Vous pouvez filtrer sur le nid d'un produit ou sur le nid d'un magasin
-
-- product=nidproduct
-- store=nidstore
-
-Ex:
-
-	http://romz.hd.free.fr/services/api/views/prices.json?product=2
-	
-	http://romz.hd.free.fr/services/api/views/prices.json?store=1
-
-Pour créer des contenus, il faut appeler l'url suivante en POST:
-
-	http://romz.hd.free.fr/services/api/node.json
 
 #### Création d'un magasin:
+Url: http://romz.hd.free.fr:3000/stores.json
 
-    {
-	  "title":"Nom du magasin",
-	  "type":"store",
-	  "field_address" : {
-	    "und": [
-          { "value":"Adresse magasin" }
-        ]
-      },
-	  "field_zipcode": {
-	    "und":[
-	      { "value": "Code postal" }
-        ]
-	  },
-	  "field_city":{
-	    "und":[
-	      { "value":"Ville" }
-        ]
-      },
-      "field_image":{
-	    "und":[
-	      { "fid":"fid du fichier" }
-        ]
-      },
-	  "field_opening_hours": {
-	    "und" : [
-	      { "value": "Horraires" }
-		]
-	  }
-	}
+```json
+{
+  "store": {
+    "name": "Nom du magasin",
+    "address": "Adresse du magasin",
+    "zipcode": "Code postal du magasin",
+    "city": "Ville du magasin",
+    "hours": "Horraires du magasin"
+  }
+}
+```
 
 #### Création d'un produit
+Url: http://romz.hd.free.fr:3000/products.json
 
-    {
-	  "title":"Nom du produit",
-	  "type":"product",
-	  "field_barcode" : {
-	    "und": [
-          { "value":"Code bar du produit" }
-        ]
-      },
-	  "field_description": {
-	    "und":[
-	      { "value": "Description du produit" }
-        ]
-	  }
-	}
+```json
+{
+  "product": {
+    "name": "Nom du produit",
+    "description":"Description du produit",
+    "barcode": "Code barre du produit",
+    "photo":"Image encodé en base64"
+  }
+}
+```
 
 #### Création d'un prix
+Url: http://romz.hd.free.fr:3000/products.json
 
-    {
-	  "title":"Nom du prix",
-	  "type":"price",
-	  "field_product": {
-        "und": <nid produit>
-      }
-	  "field_store": {
-	    "und" : <nid store>
-	  }
-	  "field_price": {
-	    "und" : [
-          {value: "prix produit"}
-        ]
-	  }
-	}
+```json
+{
+  "price": {
+    "store_id":"<id du magasin>",
+    "product_id": "<id du produit>",
+    "price": 100.5
+  }
+}
+```
 
 
 #### Ajout d'une image
 
-
-    var input = document.getElementById('id_input_file');
-	if(input.files.length > 0) {
-	  var reader = new FileReader();
-	  var file = input.files[0];
-
-      reader.onloadend = function(e) { //Action a effectuer quand le fichier a fini d'être charger
-	    var filemime = e.target.result.split(';')[0].split(':')[1];
-		var photo = e.target.result.split(';')[1].split(',')[1];
-		var params = {
-		  filesize: file.size,
-		  filename: file.name,
-		  file: photo,
-		  filemime:filemime
-		};
-           //Appeler l'url http://romz.hd.free.fr/services/api/file en poste avec en datas params
-	  }
-	  reader.readAsDataURL(file);
-	}
-
+```js
+var input = document.getElementById('id_input_file');
+if(input.files.length > 0) {
+  var reader = new FileReader();
+  var file = input.files[0];
+  reader.onloadend = function(e) { //Action a effectuer quand le fichier a fini d'être charger
+    var base64Img = e.target.result;
+  }
+  reader.readAsDataURL(file);
+}
+```
 Resources
 ---------
 
