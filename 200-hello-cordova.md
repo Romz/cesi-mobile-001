@@ -4,7 +4,7 @@ Hello phonegap
 Installation pour android
 -------------------------
 
-Dans un premier temps, il faut télécherger nodejs (si il n'est pas déjà installé).
+Dans un premier temps, il faut télécharger nodejs (si il n'est pas déjà installé).
 Vous pouvez trouver nodejs ici: [https://nodejs.org/](https://nodejs.org/).
 
 Il faut ensuite installer l'utilitaire en ligne de commande cordova. Vous pouvez trouver le guide d'installation ici: [http://cordova.apache.org/docs/en/5.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface](http://cordova.apache.org/docs/en/5.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
