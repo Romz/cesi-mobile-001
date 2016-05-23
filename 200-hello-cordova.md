@@ -19,11 +19,6 @@ Il faut ensuite installer le sdk android. Vous pouvez trouver le guide d'install
 Cordova utilise ant pour créer les projets android. Vous pouvez télécharger ant ici: [http://ant.apache.org/bindownload.cgi](http://ant.apache.org/bindownload.cgi).
 Une fois téléchargé, il faut créer une variable d'environnement ANT_HOME pointant vers le répertoire ant. Il faut ensuite rajouter à la variable d'environnement PATH: %ANT_HOME%\bin sur winodws ou $ANT_HOME/bin sur linux / OSX.
 
-Pour pouvoir développer une application avec cordova, nous allons avoir besoin de l'outil ripple. ripple est un émulateur mobile pour navigateur qui permet de tester les applications sur les différentes résolutions mobiles et aussi de tester les fonctionnalité natvie comme le gps, l'accéléromètre sans avoir à build l'application à chaque fois.
-Comme cordova, ripple fonctionne dans un environnement node.
-On peut l'installer via la ligne de commande:
-
-    npm install -g ripple-emulator
 
 Creation d'un projet
 --------------------
