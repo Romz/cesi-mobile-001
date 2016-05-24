@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+<p>
+<%= image_tag @product.photo.url :thumb %>
+
+</p>
+<p>
+  <strong>Barcode:</strong>
+  <%= @product.barcode %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<div id="test">
+  <%= file_field_tag :photo %>
+  <a id="upload">Upload test</a>
+</div>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
