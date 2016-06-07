@@ -136,7 +136,7 @@ Url: http://romz.hd.free.fr:3000/products.json
 ```
 
 #### Création d'un prix
-Url: http://romz.hd.free.fr:3000/products.json
+Url: http://romz.hd.free.fr:3000/prices.json
 
 ```json
 {
